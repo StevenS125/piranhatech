@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 //styles
 import './App.scss';
-
+import Advert from  './Advert.js'
 
 //modules
 
@@ -12,9 +12,12 @@ import './App.scss';
 class App extends Component {
   render() {
     return (
+        <div>
         <div>hello world
         </div>
-
+        <Advert>
+        </Advert>
+        </div>
     );
   }
 }
