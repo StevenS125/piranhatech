@@ -27,7 +27,7 @@ class Advert extends Component {
     return (
         <div>
             <h3>What We Offer</h3>
-            <AdPane title="Web Design and Development" content="From conception and strategy to design and implementation, Americaneagle.com builds and hosts premium websites for businesses, associations, government, and Fortune 500 companies" icon="fas fa-cloud fa-7x"></AdPane>
+            <AdPane title="Web Design and Development" content="From conception and strategy to design and implementation, Piranha Technologies builds and hosts premium websites for businesses, associations, government, and Fortune 500 companies" icon="fas fa-cloud fa-7x"></AdPane>
             <AdPane title="Integration" content="Piranha Technologies' integrations team has the experience and expertise to seamlessly integrate any third party software that your organization utilizes in order to give your users the best online experience possible." icon="fas fa-puzzle-piece fa-7x"></AdPane>
             <AdPane title="Mobile Solutions" content="With the influx of smartphones, tablets, and everything in between, it's quickly become mandatory that your business is accessible on the go via a mobile site or app." icon="fas fa-mobile fa-7x"></AdPane>
         </div>
