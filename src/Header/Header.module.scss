@@ -44,6 +44,12 @@
     font-family: Raleway;
 }
 
+.links:hover { 
+    transition: color .3s linear;
+    color: black;
+    cursor: pointer;
+}
+
 .logotech {
     margin: 20px 5px 0 20px;
     float: left;
