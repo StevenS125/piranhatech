@@ -12,16 +12,6 @@ import styles from './Advert.module.scss';
 
 
 class Advert extends Component {
-    getInitialState(){
-        return {
-            hover: false
-                }
-        }
-      
-
-    toggleHover(){
-        this.setState({hover: !this.state.hover})
-      }
 
   render() {
     return (

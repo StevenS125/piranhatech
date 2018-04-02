@@ -13,8 +13,6 @@ class App extends Component {
   render() {
     return (
         <div>
-        <div>hello world
-        </div>
         <Advert>
         </Advert>
         </div>
