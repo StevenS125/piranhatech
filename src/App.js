@@ -5,7 +5,7 @@ import Header from './Header/Header';
 
 //styles
 import './App.scss';
-
+import Advert from  './Advert.js'
 
 //modules
 
@@ -15,8 +15,10 @@ class App extends Component {
     return (
         <div>
           <Header />
-        </div>
+        <Advert>
+        </Advert>
 
+        </div>
     );
   }
 }
