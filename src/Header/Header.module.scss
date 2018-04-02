@@ -1,15 +1,59 @@
 .Nav {
-    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 50px;
+    z-index: 1;
+    width: 100%;
+}
+
+.heroSlogan {
+    position: absolute;
+    top: 200px;
+    left:800px;
+    z-index: 1;
+    font-family: Raleway;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+}
+
+.heroButton {
+    margin-top: 20px;
+    color: white;
+    background-color: transparent;
+    font-family: Raleway;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.heroButton:hover {
+    background-color: white; 
+    transition: background-color .3s linear;
+    color: black;
+    cursor: pointer;
 }
 
 .links {
+    color: white;
     float: left;
     margin: 10px 15px 10px 15px;
+    font-family: Raleway;
 }
 
 .logotech {
+    margin: 20px 5px 0 20px;
     float: left;
     border-radius: 50%;
     height: 50px;
 }
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+  }

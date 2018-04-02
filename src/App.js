@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Header from './Header/Header';
 
 //styles
-import './App.scss';
+import styles from './App.module.scss';
 import Advert from  './Advert.js'
 
 //modules
@@ -13,12 +13,10 @@ import Advert from  './Advert.js'
 class App extends Component {
   render() {
     return (
-        <div>
+        <div className={styles.container}>
           <Header />
-        <Advert>
-        </Advert>
-
-        </div>
+        <Advert />
+    </div>
     );
   }
 }
