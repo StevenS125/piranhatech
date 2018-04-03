@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 //components
 import Header from './Header/Header';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 //styles
 import styles from './App.module.scss';
@@ -18,6 +19,7 @@ class App extends Component {
           <Header />
         <Advert />
         <Contact />
+        <Footer />
     </div>
     );
   }
