@@ -2,9 +2,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 50px;
+    height: 80px;
     z-index: 1;
     width: 100%;
+    border-bottom: 2px solid white;
 }
 
 .heroSlogan {
@@ -35,6 +36,13 @@
     transition: background-color .3s linear;
     color: black;
     cursor: pointer;
+}
+
+.masthead {
+    color: white;
+    float: left;
+    margin:0 15px 10px 15px;
+    font-family: 'Monoton', cursive;
 }
 
 .links {

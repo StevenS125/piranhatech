@@ -7,8 +7,10 @@ const Header = (props) => (
     <img src="../../editedcropcopy.jpg" alt="piranha" className={styles.container}/>
         <div className={styles.Nav}> 
         <img src="../../logotech.jpg" alt="piranha tech logo" className={styles.logotech}/>
+        <h1>
+        <div className={styles.masthead}>Piranha Technologies</div> 
+        </h1>
         <h2>
-        <div className={styles.links}>Piranha Technologies</div> 
         <div className={styles.links}><a>About</a></div>
         <div className={styles.links}><a>Contact</a></div> 
         <div className={styles.links}><a>Bio</a></div> 
