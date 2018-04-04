@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "custom-react-scripts": "0.2.2",
+    "joi-browser": "^13.0.1",
+    "mailgun-js": "^0.16.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
