@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Contact.module.scss';
-import Slideshow from 'react-slidez';
+import Slideshow from 'react-slideshowz';
 
 
 

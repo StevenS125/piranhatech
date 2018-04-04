@@ -6337,9 +6337,9 @@ react-router@^4.2.0:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
-react-slidez@^0.0.20:
+react-slideshowz@^0.0.20:
   version "0.0.20"
-  resolved "https://registry.yarnpkg.com/react-slidez/-/react-slidez-0.0.20.tgz#6c0e4f49e2f0f188523040e28ea08476a63e9f1e"
+  resolved "https://registry.yarnpkg.com/react-slideshowz/-/react-slideshowz-0.0.20.tgz#4e5031692bfa800821f60dcbb0478b8319b9344e"
   dependencies:
     react "^15.5.4"
     webpack "^2.6.1"
