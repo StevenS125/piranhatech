@@ -29,6 +29,8 @@ class Contact extends Component {
 <div className={styles.contactContainer}>
       <Slideshow
         autoplay
+        useDotIndex={true}
+        showIndex={true}
         slideInterval={4000}
         defaultIndex={1}
         slides={['../../sample.jpg', '../../sample2.jpg', '../../sample3.jpg']}

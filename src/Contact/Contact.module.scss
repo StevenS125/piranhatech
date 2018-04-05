@@ -113,3 +113,11 @@ form {
     text-align: center;
     color: white;
 }
+
+.menu-row {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
