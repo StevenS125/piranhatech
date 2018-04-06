@@ -44,6 +44,16 @@ class Contact extends Component {
   }).then(function(response) {
     console.log( response.json());
   })
+
+  this.state = {
+      
+    fname: '',
+    lname: '',
+    email: '',
+    msg: ''
+  }
+
+  document.getElementById('form').reset()
  }
   
   handleChange(event) {
@@ -74,7 +84,7 @@ class Contact extends Component {
       <h2>Want to work with us?</h2>
       </div>
 
-        <form onSubmit = {
+        <form id="form" onSubmit = {
           this.onSubmit
         } >
 
