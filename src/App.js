@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Header from './Header/Header';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-import Burgerman from './Contact/Burgerman';
+// import Burgerman from './Contact/Burgerman';
 
 //styles
 import styles from './App.module.scss';
@@ -21,7 +21,6 @@ class App extends Component {
         <Advert />
         <Contact />
         <Footer />
-        <Burgerman />
     </div>
     );
   }
