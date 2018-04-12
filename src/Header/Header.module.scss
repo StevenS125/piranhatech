@@ -72,7 +72,29 @@
     z-index: -3;
   }
 
+  .menurow {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    align-items: center;
+    color: white;
+    float: right;
+    padding-right: 10px;
+    visibility: hidden;
+}
+
 
   @media (max-width: 600px) {
-
+    .menurow {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        float: right;
+        padding-right: 10px;
+        visibility: visible;
+    }
   }
