@@ -8,7 +8,8 @@ import Footer from './Footer/Footer';
 
 //styles
 import styles from './App.module.scss';
-import Advert from  './Advert/Advert'
+import Advert from  './Advert/Advert';
+import Tweets from  './Tweets/Tweets';
 
 //modules
 
@@ -19,6 +20,7 @@ class App extends Component {
         <div className={styles.container}>
           <Header />
         <Advert />
+        <Tweets />
         <Contact />
         <Footer />
     </div>

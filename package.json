@@ -7,7 +7,9 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-slideshowz": "^0.0.40"
+    "react-slideshowz": "^0.0.40",
+    "react-twitter-embed": "^1.1.3",
+    "twitter": "^1.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
