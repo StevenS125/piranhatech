@@ -1,26 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from "./Header.module.scss";
-// import { Link } from 'react-router-dom';
 
-const Header = (props) => (
+
+class Header extends Component {
+
+render() {
+        return (
     <div id="myNav" className={styles.container}>
-    <img src="../../editedcropcopy.jpg" alt="piranha" className={styles.container}/>
-        <div className={styles.Nav}> 
-        <img src="../../logotech.jpg" alt="piranha tech logo" className={styles.logotech}/>
-        <h1>
-        <div className={styles.masthead}>Piranha Technologies</div> 
-        </h1>
-        <h2>
-        <div className={styles.links}><a>About</a></div>
-        <div className={styles.links}><a>Contact</a></div> 
-        <div className={styles.links}><a>Bio</a></div> 
-        <div className={styles.links}><a>Partnerships</a></div>  
-</h2>
-        </div>
-<div className={styles.heroSlogan}>Ease your mind with our expertise in your next project
+
+    <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
+<div className={styles.heroSlogan}>Have Kevin Holmes motivate your audience at your next event &nbsp; &nbsp; &nbsp;
 <button className={styles.heroButton}>Learn How</button>
 </div>
         </div>
 );
-
+}
+}
 export default Header

@@ -5,11 +5,12 @@
     position: relative;
 }
 
+
 .forming {
-    background-color: black;
+    background-color: white;
     padding-top: 50px;
     padding-left: 5%;
-    color: black;
+    color: #222E50;
     text-align: left;
     float: left;
     height: 450px;
@@ -31,7 +32,7 @@ form {
     
     // Looks like placeholder
     > label {
-      opacity: 0.3;
+      color: #222E50;
       font-weight: bold;
       position: absolute;
       top: 22px;
@@ -101,7 +102,7 @@ form {
     display: block;
     width: 100%;
     margin: 20px 0;
-    background: crimson;
+    background: #222E50;
     color: white;
     border: 0;
     padding: 20px;
@@ -111,5 +112,30 @@ form {
 
 .head {
     text-align: center;
-    color: white;
+    color: #222E50;
+}
+
+@media (max-width: 900px) {
+  .contactContainer {
+    border-top: 2px solid #222E50;
+    float: left;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.forming {
+  border-top: 2px solid #222E50;
+  background-color: white;
+  padding-top: 50px;
+  padding-left: 5%;
+  color: #222E50;
+  text-align: left;
+  float: left;
+  height: 450px;
+  width:95%;
+  position: relative;
+  margin-bottom: 60px;
+}
+
 }

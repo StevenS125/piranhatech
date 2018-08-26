@@ -1,0 +1,37 @@
+.herocontact {
+    padding-top: 180px;
+    height: 870px; 
+    font-size: 40px;
+    background-color: #222E50;
+    color: white;
+    text-align: center;
+}
+
+.heroleft {
+width: 40%;
+float: left;
+margin: 5%;
+}
+
+.heroright {
+width:40%;
+float: left;
+margin: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    .heroleft {
+        width: 90%;
+        float: left;
+        margin: 5%;
+        }
+        
+        .heroright {
+        width:90%;
+        float: left;
+        margin: 5%;
+        }
+
+}

@@ -1,8 +1,26 @@
 .copyright {
-    margin-top: 510px;
+    margin-top: 550px;
     width: 95%;
     height: 50px;
-    color: black;
+    color: #222E50;
     font-weight: bold;
     padding-left: 5%;
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+    
+    .copyright {
+        margin-top: 1000px;
+        width: 95%;
+        height: 80px;
+        color: #222E50;
+        font-weight: bold;
+        padding-left: 5%;
+    }
+
+
+
+
+
 }

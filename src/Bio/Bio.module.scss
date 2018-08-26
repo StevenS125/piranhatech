@@ -1,0 +1,121 @@
+.biopic {
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+  }
+
+  .abouthead {
+    color: #222E50;
+      padding-left: 10%;
+      font-size: 40px;
+      padding-top: 20px;
+      border-top: solid 2px white;
+  }
+
+  .heroSlogan {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 45%;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.heroButton {
+    margin-top: 20px;
+    color: white;
+    background-color: transparent;
+    font-family: Raleway;
+    font-size: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.textLeft {
+    float: left;
+    color: #222E50;
+    margin-top: 30px;
+    margin-right: 5%;
+    width: 50%;
+    font-size: 20px;
+}
+
+.textFull {
+    color: #222E50;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.aboutPhoto {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.candidPhoto {
+    margin: 30px;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+
+    .biopic {
+        margin-top: 200px;
+        height: 100%;
+        width: 100%;
+        z-index: -3;
+      }
+
+      .heroSlogan {
+        position: absolute;
+        top: 250px;
+        left: 50px;
+        width: 45%;
+        z-index: 0;
+        text-align: center;
+        padding: 10px;
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .aboutPhoto {
+        float: left;
+        width: 85%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .textLeft {
+        float: left;
+        color: #222E50;
+        margin-top: 30px;
+        margin-left: 5%;
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .textFull {
+        color: #222E50;
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+
+}
