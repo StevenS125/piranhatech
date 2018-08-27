@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
+import {Animated} from "react-animated-css";
+
 
 //components
 
@@ -46,6 +48,23 @@ class Advert extends Component {
   render() {
     return (
 <div>
+        <div id="myNav" className={styles.container}>
+        <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
+        <img src="../../home_5_30.jpg" alt="piranha" className={styles.container}/>
+        <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
+    <div className={styles.heroSlogan}>Let us help you with your IT solutions &nbsp; &nbsp; &nbsp;
+   
+   <Link to="/contact">
+    <button className={styles.heroButton}>Learn How</button>
+    </Link>
+    </div>
+    </Animated>
+    </Animated>
+            </div>
+
+
+
+
 
         <div className={styles.advertcontainer}>
             <h3>What We Offer</h3>

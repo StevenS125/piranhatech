@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import styles from "./Nav.module.scss";
 import { Link } from 'react-router-dom';
-
+import {Animated} from "react-animated-css";
 
 
 class Header extends Component {
         constructor(props) {
                 super(props);
                 this.state = {
-                        arrayList: ['Straight Talk Consulting Inc'],
-                        open: false
+                        arrayList: ['Piranha Technologies'],
+                        open: false,
+                        in: false
                 };
 }
 
+
+toggleEnterState = () => {
+        this.setState({ in: true });
+      }
 
 openList = () => {
         return (
@@ -54,17 +59,17 @@ render() {
 
         return (
     <div id="myNav" className={styles.container}>
-
         <div className={styles.Nav}> 
-        
         <div className={styles.masthead}>
-        <img src="../../LOGO.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
-        Straight Talk Consulting Inc
-                </div> 
+        <Animated animationIn="bounceInLeft" animationInDelay={250} isVisible={true}>
+        {/* <img src="../../LOGO.jpg" alt="Straight talk today logo" className={styles.logoimg}/> */}
+<div>Piranha Technologies</div> 
                 <Link className={styles.links} to="/Contact">Contact</Link> 
                 <Link className={styles.links} to="/Services">Services</Link>  
         <Link className={styles.links}  to="/Bio">About</Link>
         <Link className={styles.links} to="/">Home</Link>  
+        </Animated>
+        </div>
 <div className={styles.menurow}>
                                 </div>
         </div>

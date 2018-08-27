@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Bio.module.scss';
+import {Animated} from "react-animated-css";
 
 import Gallery from 'react-photo-gallery';
 
@@ -50,13 +51,13 @@ class Bio extends Component {
   render() {
     return (
       <div>
+        <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
           <div className={styles.aboutHero}>
-          <img src="../../biophoto.jpg" alt="Straight talk today logo" className={styles.biopic}/>
-          <div className={styles.heroSlogan}>Straight Talk for Straight Understanding &nbsp; &nbsp; &nbsp;
-          <span>-Kevin Holmes</span>
+          <img src="../../abouthero.jpg" alt="Straight talk today logo" className={styles.biopic}/>
+          <div className={styles.heroSlogan}>Helping Small Businesses Achieve their Online Solutions &nbsp; &nbsp; &nbsp;
     </div>
-
-          </div>
+  </div>
+  </Animated>  
           <div className={styles.abouthead}>About Kevin Holmes</div>
 <div className={styles.aboutPhoto}>
           <img src="../../candid.jpg" alt="Kevin Holmes Posing in Charlotte" className={styles.candidPhoto}/>
