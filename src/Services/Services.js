@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Animated} from "react-animated-css";
 //components
 
 //styles
@@ -14,6 +14,7 @@ class Services extends Component {
   render() {
     return (
         <div >
+                  <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
             <div className={styles.filler}>
             <div className={styles.title}>
             <h1>Services, Training &<br/>Development</h1>
@@ -86,6 +87,7 @@ class Services extends Component {
               </ul>
             </div>
           </div>
+          </Animated>
         </div>
 
     );

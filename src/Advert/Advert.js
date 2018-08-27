@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import {Animated} from "react-animated-css";
 
 //components
 
@@ -16,13 +17,17 @@ class Advert extends Component {
     return (
 <div>
         <div id="myNav" className={styles.container}>
-        <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
-    <div className={styles.heroSlogan}>Have Kevin Holmes motivate your audience at your next event &nbsp; &nbsp; &nbsp;
+        <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
+        <img src="../../home_5_30.jpg" alt="piranha" className={styles.container}/>
+        <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
+    <div className={styles.heroSlogan}>Let us help you with your IT solutions &nbsp; &nbsp; &nbsp;
    
    <Link to="/contact">
     <button className={styles.heroButton}>Learn How</button>
     </Link>
     </div>
+    </Animated>
+    </Animated>
             </div>
 
 

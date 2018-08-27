@@ -11,7 +11,7 @@ export default class Contact extends Component {
           <div className={styles.footContainer}>
           <br></br>
           <div className={styles.copyright}>
-          &#169; Straight Talk Consulting Inc
+          &#169; Piranha Technologies
               </div>
               </div>
         )

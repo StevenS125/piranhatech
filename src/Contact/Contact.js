@@ -80,7 +80,7 @@ class Contact extends Component {
       <div className={styles.forming}>
       
       <div className={styles.head}>
-      <h2>Want to work with Kevin?</h2>
+      <h2>Lets Build something together</h2>
       </div>
 
         <form id='form' onSubmit= {this.onSubmit}>

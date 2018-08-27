@@ -62,25 +62,15 @@ h3 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .heroSlogan {
     position: absolute;
-    top: 150px;
+    top: 250px;
     left: 50px;
     width: 45%;
     z-index: 1;
     text-align: center;
     padding: 10px;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 30px;
     font-weight: 800;
     color: white;
@@ -92,7 +82,7 @@ h3 {
     margin-top: 20px;
     color: white;
     background-color: transparent;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 30px;
     border: 2px solid white;
     padding: 10px;
@@ -100,9 +90,9 @@ h3 {
 }
 
 .heroButton:hover {
-    background-color: black; 
+    background-color: white; 
     transition: background-color .3s linear;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -111,7 +101,7 @@ h3 {
     float: left;
     font-size: 40px;
     margin:0 15px 10px 15px;
-    font-family: 'Monoton', cursive;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
