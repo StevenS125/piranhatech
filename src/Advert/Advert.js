@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 //components
 
@@ -11,29 +12,50 @@ import styles from './Advert.module.scss';
 
 
 class Advert extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            services: [
+                {
+                    title: "Social Media",
+                    bgUrl: "social_med.jpg",
+                    logoUrl: "",
+                    h1_txt: "Social Media",
+                    h6_txt: "Something else but smaller",
+                    p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
+                    detailUrl: ""
+
+                },
+                {
+                    title: "Web Development",
+                    bgUrl: "code.jpg",
+                    logoUrl: "http://simpleicon.com/wp-content/uploads/computer-5.png",
+                    h1_txt: "Web Development",
+                    h6_txt: "Something else but smaller",
+                    p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
+                    detailUrl: ""
+
+                }
+            ]
+        }
+        
+      }
+
+    
 
   render() {
     return (
 <div>
-        <div id="myNav" className={styles.container}>
-        <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
-    <div className={styles.heroSlogan}>Have Kevin Holmes motivate your audience at your next event &nbsp; &nbsp; &nbsp;
-   
-   <Link to="/contact">
-    <button className={styles.heroButton}>Learn How</button>
-    </Link>
-    </div>
-            </div>
-
-
-
 
         <div className={styles.advertcontainer}>
             <h3>What We Offer</h3>
-            <AdPane title="Motivational Speaking" content={["embracing your handicap", "reaching your full potential", "discovering who you are",  "identifying your strengths and weaknesses"]}
-            icon="fas fa-chart-line fa-7x"></AdPane>
-            <AdPane title="Life Coaching 1 on 1" content={["Taking control of your finances", "becoming in tune with your abilities", "knowing your worth", "Building strong relationships", "Being compatable with who you are"]} icon="fas fa-clipboard fa-7x"></AdPane>
-            <AdPane title="Services training and development" content={["Real estate investment", "planning for your future", "money management"]} icon="fas fa-shipping-fast fa-7x"></AdPane>
+            
+            <AdPane service= {this.state.services[0]}></AdPane>
+            <AdPane service= {this.state.services[1]}></AdPane>
+            <AdPane service= {this.state.services[0]}></AdPane>
+           
+            
+           
         </div>
 </div>
     );
@@ -51,28 +73,22 @@ class AdPane extends Component {
     toggleHover(){
         this.setState({hover: !this.state.hover})
       }
-    
+       
 
   render() {
     return (
-            
-            <div className={styles.adContainer} onClick={this.toggleHover}>
-                <div className={styles.adMain}>
-                    <div className={styles.fas}>
-                        <i className={this.props.icon}></i>
-                    </div>
-                    <div className={styles.adTitle}>
-                        {this.props.title}
-                    </div>
-                    {this.state.hover &&
-                    <div className={styles.adContent}>
-                    {this.props.content.map((item, index) => (
-                        <li>{item}</li>
-                    ))}
-                    </div>
-                    }
+        <ScrollAnimation animateIn="bounceInRight">
+            <div className={styles.adContainer} onClick={this.toggleHover} style={{backgroundImage: "url("+ this.props.service.bgUrl+ ")"}}>
+                
+                <img className={styles.logo} alt="picture for service" src={this.props.service.logoUrl}></img>
+                <div className={styles.shader}>
+                <h1>{this.props.service.h1_txt}</h1>
+                <h6>{this.props.service.h6_txt}</h6>
+                <p>{this.props.service.p_txt}</p>
+                <button className="btn btn-info">button</button>
                 </div>
             </div>
+        </ScrollAnimation>
 
     );
   }
