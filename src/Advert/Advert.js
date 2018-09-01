@@ -37,6 +37,16 @@ class Advert extends Component {
                     p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
                     detailUrl: ""
 
+                },
+                {
+                    title: "Logo and Graphic Design",
+                    bgUrl: "design2.jpg",
+                    logoUrl: "http://simpleicon.com/wp-content/uploads/computer-5.png",
+                    h1_txt: "Logo Design Development",
+                    h6_txt: "Something else but smaller",
+                    p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
+                    detailUrl: ""
+
                 }
             ]
         }
@@ -71,7 +81,7 @@ class Advert extends Component {
             
             <AdPane service= {this.state.services[0]}></AdPane>
             <AdPane service= {this.state.services[1]}></AdPane>
-            <AdPane service= {this.state.services[0]}></AdPane>
+            <AdPane service= {this.state.services[2]}></AdPane>
            
             
            

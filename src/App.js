@@ -10,6 +10,7 @@ import Nav from './Nav/Nav';
 import Events from './Events/Events';
 import Services from  './Services/Services'
 import Advert from  './Advert/Advert';
+import Tweets from  './Tweets/Tweets';
 
 
 //styles
@@ -20,7 +21,9 @@ class AdEvents extends Component {
     return (
     <div>
     <Advert></Advert>
+    <Tweets></Tweets>
     <Events></Events>
+
     </div>
     );}
 }
@@ -38,6 +41,8 @@ class App extends Component {
         <Route exact path="/" component={AdEvents}/>
         <Route path="/contact" component={Contacter}/>
         <Route path="/services" component={Services}/>
+       
+
         <Route path="/bio" component={Bio}/>
         </Switch>
         <Contact />
