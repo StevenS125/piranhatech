@@ -52,8 +52,8 @@ class Advert extends Component {
         <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
         <img src="../../home_5_30.jpg" alt="piranha" className={styles.container}/>
         <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
-    <div className={styles.heroSlogan}>Let us help you with your IT solutions &nbsp; &nbsp; &nbsp;
-   
+    <div className={styles.heroSlogan}><span>Let us Help your Business<br></br> </span> 
+    <span>with our IT Solutions <br></br></span> 
    <Link to="/contact">
     <button className={styles.heroButton}>Learn How</button>
     </Link>
@@ -67,7 +67,6 @@ class Advert extends Component {
 
 
         <div className={styles.advertcontainer}>
-            <h3>What We Offer</h3>
             
             <AdPane service= {this.state.services[0]}></AdPane>
             <AdPane service= {this.state.services[1]}></AdPane>
@@ -99,7 +98,7 @@ class AdPane extends Component {
         <ScrollAnimation animateIn="bounceInRight">
             <div className={styles.adContainer} onClick={this.toggleHover} style={{backgroundImage: "url("+ this.props.service.bgUrl+ ")"}}>
                 
-                <img className={styles.logo} alt="picture for service" src={this.props.service.logoUrl}></img>
+                <img className={styles.logo} alt="services" src={this.props.service.logoUrl}></img>
                 <div className={styles.shader}>
                 <h1>{this.props.service.h1_txt}</h1>
                 <h6>{this.props.service.h6_txt}</h6>
