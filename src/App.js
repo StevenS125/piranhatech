@@ -22,7 +22,6 @@ class AdEvents extends Component {
     <div>
     <Advert></Advert>
     <Tweets></Tweets>
-    <Events></Events>
 
     </div>
     );}
@@ -45,7 +44,7 @@ class App extends Component {
 
         <Route path="/bio" component={Bio}/>
         </Switch>
-        <Contact />
+       
         <Footer />
     </div>
     </Router>

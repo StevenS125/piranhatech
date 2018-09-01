@@ -76,15 +76,10 @@ class Advert extends Component {
 
 
 
-        <div className={styles.advertcontainer}>
-            <h3>What We Offer</h3>
-            
+        <div className={styles.advertcontainer}>       
             <AdPane service= {this.state.services[0]}></AdPane>
             <AdPane service= {this.state.services[1]}></AdPane>
-            <AdPane service= {this.state.services[2]}></AdPane>
-           
-            
-           
+            <AdPane service= {this.state.services[2]}></AdPane>    
         </div>
 </div>
     );

@@ -13,6 +13,8 @@ export default class Contact extends Component {
           <div className={styles.copyright}>
           &#169; Piranha Technologies
               </div>
+              <a className={styles.link} href="localhost:3000/">Home</a>
+              <a className={styles.link} href="localhost:3000/Contact">Contact</a>
               </div>
         )
         }
