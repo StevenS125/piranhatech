@@ -1,21 +1,28 @@
 .copyright {
-    width: 95%;
-    height: 50px;
     color: #222E50;
     font-weight: bold;
-    padding-left: 5%;
+    
     background-color: white;
 }
 
+
+.link {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 10pt;
+    text-decoration: underline;
+}
 @media (max-width: 900px) {
     
-    .copyright {
-        width: 95%;
-        height: 80px;
-        color: #222E50;
-        font-weight: bold;
-        padding-left: 5%;
-    }
+
+    // .copyright {
+    //     margin-top: 1000px;
+    //     width: 95%;
+    //     height: 80px;
+    //     color: #222E50;
+    //     font-weight: bold;
+    //     padding-left: 5%;
+    // }
 
 
 
