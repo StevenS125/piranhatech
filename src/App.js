@@ -3,7 +3,6 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 //components
 import Contacter from './Contacter/Contacter';
-import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Bio from './Bio/Bio';
 import Nav from './Nav/Nav';
@@ -44,7 +43,7 @@ class App extends Component {
 
         <Route path="/bio" component={Bio}/>
         </Switch>
-       
+
         <Footer />
     </div>
     </Router>

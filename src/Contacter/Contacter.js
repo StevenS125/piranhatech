@@ -14,15 +14,13 @@ class Contacter extends Component {
                   <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
             <div className={styles.herocontact}>
             <div className={styles.heroleft}>
-            Contact us by mail:<br></br>
-            128-08 Inwood St.<br></br>
-            Jamaica NY 11436
+ 
 
            
             </div>
             
             <div className={styles.heroright}>
-            Connect with Kevin Holmes for media opportunities, general questions or comments using the form below 
+            <img src="../../contactphoto_750x500.jpg" alt="piranha" className={styles.container}/>
               </div> 
                 </div>
                 </Animated>
