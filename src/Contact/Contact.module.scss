@@ -2,6 +2,7 @@
 
 .contactContainer {
     float: left;
+    background: #fafaff; 
     height: 500px;
     width: 50%;
     position: relative;
@@ -20,21 +21,21 @@ padding-top: 50px;
 font-size: 40px;
 font-weight: bold;
 text-align: center;
-color: #222E50;
+color: #001021; 
 }
 
 .subhead {
   font-weight: bold;
-  color: #222E50;
+  color: #001021;
   text-align: center;
 }
 
 
 .forming {
-    background-color: white;
+    background-color: #fafaff;
     padding-top: 50px;
     padding-left: 5%;
-    color: #222E50;
+    color: #001021;
     text-align: left;
     float: left;
     height: 500px;
@@ -49,12 +50,12 @@ form {
   // positioning context
   > div {
     position: relative;
-    background: white;
+    background: #fafaff;
     border-bottom: 1px solid #ccc;
     
     // Looks like placeholder
     > label {
-      color: #222E50;
+      color: #001021;
       font-weight: bold;
       position: absolute;
       top: 22px;
@@ -68,14 +69,14 @@ form {
       width: 80%;
       border: 0;
       padding: 20px 20px 20px 50px;
-      background: white;
+      background: #fafaff;
       
       &:focus {
         
         // removing default focus style
         outline: 0;
         // adding new one
-        background: white;
+        background: #fafaff;
         
         & + label {
           opacity: 0;
@@ -124,7 +125,7 @@ form {
     display: block;
     width: 100%;
     margin: 20px 0;
-    background: #222E50;
+    background: #001021;
     color: white;
     border: 0;
     padding: 20px;
@@ -134,7 +135,7 @@ form {
 
 .head {
     text-align: center;
-    color: #222E50;
+    color: #001021;
 }
 
 @media (max-width: 900px) {

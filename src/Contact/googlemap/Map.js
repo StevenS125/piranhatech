@@ -43,21 +43,20 @@ export class MapContainer extends Component {
             lat: 35.372405,
             lng: -80.781380
           }}
-          zoom={14}>
+          zoom={10}>
     
             <Marker onClick={this.onMarkerClick}
                     title={'Piranha Technologies Head Quarters'}
-                    name={'Current location'}
+                    name={'Piranha Technologies HQ'}
                      />
     
-            <InfoWindow
-              onOpen={this.windowHasOpened}
-              onClose={this.windowHasClosed}
-           visible={this.state.showingInfoWindow}> 
-      <div>
-        <h1>{this.state.selectedPlace.name}</h1>
-      </div>
-            </InfoWindow>
+    <InfoWindow
+            marker={this.state.activeMarker}
+            visible={this.state.showingInfoWindow}>
+              <div>
+                <h4>{this.state.selectedPlace.name}</h4>
+              </div>
+          </InfoWindow>
           </Map>
           </div>
         );
