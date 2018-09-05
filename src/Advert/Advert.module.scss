@@ -1,6 +1,5 @@
-body {
-
-    background-color: white
+.container {
+ background-color: black
 }
 
 
@@ -28,6 +27,8 @@ h1 {
     text-align: right;
     font-family: 'Raleway', sans-serif;
     color: black;
+    text-shadow: 2px 3px 6px rgba(247, 244, 244, 0.534),
+                 0px -5px 35px rgba(255,255,255,0.3);
 }
 
 .adTitle {

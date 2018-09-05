@@ -20,7 +20,7 @@ class Advert extends Component {
             services: [
                 {
                     title: "Social Media",
-                    bgUrl: "social_med.jpg",
+                    bgUrl: "soc4.jpg",
                     logoUrl: "",
                     h1_txt: "Social Media",
                     h6_txt: "Something else but smaller",
@@ -30,7 +30,7 @@ class Advert extends Component {
                 },
                 {
                     title: "Web Development",
-                    bgUrl: "code.jpg",
+                    bgUrl: "dev3.jpg",
                     logoUrl: "http://simpleicon.com/wp-content/uploads/computer-5.png",
                     h1_txt: "Web Development",
                     h6_txt: "Something else but smaller",
@@ -40,9 +40,9 @@ class Advert extends Component {
                 },
                 {
                     title: "Logo and Graphic Design",
-                    bgUrl: "design2.jpg",
+                    bgUrl: "logo2.jpg",
                     logoUrl: "http://simpleicon.com/wp-content/uploads/computer-5.png",
-                    h1_txt: "Logo Design Development",
+                    h1_txt: "Logo and Graphic Design",
                     h6_txt: "Something else but smaller",
                     p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
                     detailUrl: ""
@@ -105,7 +105,7 @@ class AdPane extends Component {
         <ScrollAnimation animateIn="bounceInRight">
             <div className={styles.adContainer} onClick={this.toggleHover} style={{backgroundImage: "url("+ this.props.service.bgUrl+ ")"}}>
                 
-                <img className={styles.logo} alt="services" src={this.props.service.logoUrl}></img>
+                
                 <div className={styles.shader}>
                 <h1>{this.props.service.h1_txt}</h1>
                 <h6>{this.props.service.h6_txt}</h6>
