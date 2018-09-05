@@ -7,9 +7,6 @@ import styles from './Twitter.module.scss';
   
  class Tweets extends Component {
     
-    constructor(props) {
-        super(props)
-     }
     toggleHover(){
         this.setState({hover: !this.state.hover})
       }

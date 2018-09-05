@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Contact.module.scss';
-import Slideshow from 'react-slideshowz';
-
+import Map from '../Contact/googlemap/Map';
 
 
 class Contact extends Component {
@@ -65,17 +64,17 @@ class Contact extends Component {
     return (
       <div>
 <div className={styles.contactContainer}>
-      <Slideshow
-        autoplay
-        useDotIndex={true}
-        showIndex={true}
-        slideInterval={5000}
-        defaultIndex={1}
-        slides={['../../sample.jpg', '../../sample2.jpg', '../../sample3.jpg']}
-        effect={'bottom'}
-        height={'100%'}
-        width={'100%'}
-      />
+<div className={styles.contactHead}>Headquarters</div>
+<div className={styles.subhead}>704-842-3944</div>
+<div className={styles.subhead}>Ben@PiranhaTechnologies.com</div>
+<br></br>
+<div className={styles.subhead}>4921 Jean Grimes Dr.</div>
+<div className={styles.subhead}>Charlotte NC, 28269</div>
+
+
+<div className={styles.mapContainer}>
+<Map />
+</div>
       </div>
       <div className={styles.forming}>
       

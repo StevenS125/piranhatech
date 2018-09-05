@@ -1,8 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
 .contactContainer {
     float: left;
     height: 500px;
     width: 50%;
     position: relative;
+}
+
+.mapContainer {
+  padding-top: 5%;
+  padding-left: 25%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.contactHead {
+padding-top: 50px;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+color: #222E50;
+}
+
+.subhead {
+  font-weight: bold;
+  color: #222E50;
+  text-align: center;
 }
 
 
@@ -13,12 +37,10 @@
     color: #222E50;
     text-align: left;
     float: left;
-    height: 450px;
-    width:45%;
+    height: 500px;
+    width:50%;
     position: relative;
 }
-
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
 form {
   max-width: 80%;

@@ -6,7 +6,6 @@ import Contacter from './Contacter/Contacter';
 import Footer from './Footer/Footer';
 import Bio from './Bio/Bio';
 import Nav from './Nav/Nav';
-import Events from './Events/Events';
 import Services from  './Services/Services'
 import Advert from  './Advert/Advert';
 import Tweets from  './Tweets/Tweets';
