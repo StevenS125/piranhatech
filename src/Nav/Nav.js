@@ -94,6 +94,8 @@ render() {
                     <NavItem>
                       <NavLink href="#/Contact">Contact Us</NavLink>
                     </NavItem>
+                    <NavItem>
+                    </NavItem>
                   </Nav>
                 </Collapse>
               </Navbar>

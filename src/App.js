@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
+
 //components
 import Contacter from './Contacter/Contacter';
 import Footer from './Footer/Footer';
@@ -13,6 +14,14 @@ import Tweets from  './Tweets/Tweets';
 
 //styles
 import styles from './App.module.scss';
+
+// font awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faPalette, faCode, faLaptop } from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(faPalette, faCode, faLaptop )
+
 
 class AdEvents extends Component {
   render() {

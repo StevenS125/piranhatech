@@ -1,184 +1,43 @@
-.filler {
-    // padding-top: 15%;
-    padding-bottom: 30%;
-    height: 50px;
-    background-color: white;
+.servicesHero {
+    width: 100%;
+}
+
+.serviceImg {
+    width: 100%;
+    z-index: 0;
+}
+
+.serviceText {
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    width: 50%;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 800;
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-body {
-	background-color: white;
+.servicesHead {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
 }
 
-.title {
-	font-family: "Montserrat";
-	text-align: center;
-	color: black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 80vh;
-    letter-spacing: 1px;
-    margin-bottom: 5%
-}
-
-h1 {
-	background-color: black;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	text-transform: uppercase;
-	font-size: 90px;
-	line-height: 100px;
-    margin: 10px 0;
-    
-}
-  
-
-h2 {
-    font-size: 40px;
-    margin-bottom: 3%
-}
-
-h3 {
-    color: black;
-    font-size: 30px
-}
-
-.seminars {
-    
-    background-color: white;
-    height: 600px;
-
-    > h2 {
-        border-bottom: 2px solid #222E50;
-        color: #222E50;
-        padding-top: 3%;
-        margin-top:0;
-    }
-    > .semi {
-        float: left;
-        background-color:#222E50;
-        color: white;
-        height: 390px;
-        width: 40%;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 5%;
-        border: 2px solid white;
-        
-    }
-
-    .semi:hover {
-        box-shadow: 0 30px 50px 0 rgba(39, 39, 39, 0.322), 0 30px 60px 0 rgba(0, 0, 0, 0.192);
-       
-
-
-
-    }
+.feature {
+    width:40%;
+    float: left;
+    text-align: center;
+    margin: 5%;
 }
 
  
 
 @media only screen and (max-width: 900px) {
-
-
-    .filler {
-        // padding-top: 15%;
-        padding-bottom: 2%;
-        height: 300px;
-        background-color: white;
-        color: white;
-    
-        
-    }
-    
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
-    body {
-        background-color: white;
-    }
-    
-    .title {
-        font-family: "Montserrat";
-        text-align: center;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 20vh;
-        letter-spacing: 1px;
-        margin-bottom: 5%
-    }
-    
-    h1 {
-        background-color: black;
-        // background-size: cover;
-        color: transparent;
-        -moz-background-clip: text;
-        -webkit-background-clip: text;
-        text-transform: uppercase;
-        font-size: 40px;
-        padding-top: 270px;
-        line-height: .75;
-        margin: 10px 0;
-        font-family: 'Raleway';
-    
-    }
-      
-    
-    h2 {
-        font-size: 35px;
-        font-family: 'Raleway';
-        text-align: center;
-    }
-    
-    h3 {
-        font-size: 30px;
-        font-family: 'Raleway';
-    }
-    
-    .seminars {
-        
-        background-color: white;
-        > div {
-        height: 800px;
-        }
-        > h2 {
-            border-bottom: 2px solid white;
-            color: #222E50;
-            padding-top: 3%;
-            
-            font-family: 'Raleway';
-        }
-        > .semi {
-            float: left;
-            background-color: #222E50;
-            color: white;
-            height: 500px;
-            width: 90%;
-            margin-left: 5%;
-            margin-right: 5%;
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-bottom: 5%;
-            margin-bottom: 5%;
-            border: 2px solid white;
-            font-family: 'Raleway';
-            
-        }
-    
-        .semi:hover {
-            box-shadow: 0 15px 25px 0 rgba(235, 232, 232, 0.692), 0 30px 40px 0 rgba(243, 238, 238, 0.55);
-           
-    
-    
-    
-        }
-    }
 
 }
