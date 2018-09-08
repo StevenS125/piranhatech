@@ -60,9 +60,12 @@ class Advert extends Component {
 <div>
         <div id="myNav" className={styles.container}>
         <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
-        <img src="../../home_5_30.jpg" alt="piranha" className={styles.container}/>
+        <img src="../../homepage2.jpg" alt="piranha" className={styles.container}/>
         <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
-    <div className={styles.heroSlogan}><span>Let us Help your Business<br></br> </span> 
+    <div className={styles.heroSlogan}>
+    <h1>Drive your Company into the</h1>
+        <h1> Ecommerce World</h1>
+    <span>Let Piranha Technologies Help your Business<br></br> </span> 
     <span>with our IT Solutions <br></br></span> 
    <Link to="/contact">
     <button className={styles.heroButton}>Learn How</button>
@@ -107,7 +110,7 @@ class AdPane extends Component {
                 
                 
                 <div className={styles.shader}>
-                <h1>{this.props.service.h1_txt}</h1>
+                <h2>{this.props.service.h1_txt}</h2>
                 <h6>{this.props.service.h6_txt}</h6>
                 <p>{this.props.service.p_txt}</p>
                 <button className="btn btn-info">button</button>

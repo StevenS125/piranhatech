@@ -19,7 +19,7 @@ class Services extends Component {
         <div className={styles.servicesHero}>
         <img src="../../designreal.jpg" alt="piranha" className={styles.serviceImg}/>
         <div className={styles.serviceText}>
-              <div>Need Help?</div>
+              <div><h1>Need Help?</h1></div>
               <div>Piranha Technologies is here</div>
               <div>with our suite of Digital Services</div>
 </div>
