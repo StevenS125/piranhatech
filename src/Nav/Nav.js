@@ -79,7 +79,9 @@ render() {
                 <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
                 <Navbar color="faded" light expand="md">
                 <NavbarToggler onClick={this.toggle} />
-                <NavbarBrand href="/"><strong>Piranha Technologies</strong></NavbarBrand>
+                <NavbarBrand href="/">
+                <img src="../../logoedit.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
+                Piranha Technologies</NavbarBrand>
                 <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>

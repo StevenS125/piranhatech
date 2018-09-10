@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 //styles
 import styles from './Services.module.scss';
+import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -49,7 +50,9 @@ class Services extends Component {
         </div>
 
                         <div className={styles.feature}>
-              <FontAwesomeIcon icon="palette" size="5x" color="green" />
+              <FontAwesomeIcon icon={faTwitter} size="5x" color="green" /> &nbsp;
+              <FontAwesomeIcon icon={faFacebook} size="5x" color="green" /> &nbsp;
+              <FontAwesomeIcon icon={faLinkedin} size="5x" color="green" />
       
       <h4>Social Media Management</h4>
         <p>

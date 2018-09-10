@@ -105,7 +105,7 @@ class AdPane extends Component {
 
   render() {
     return (
-        <ScrollAnimation animateIn="bounceInRight">
+        <ScrollAnimation animateIn="bounceInRight" animateOnce={true} animatePreScroll={false}>
             <div className={styles.adContainer} onClick={this.toggleHover} style={{backgroundImage: "url("+ this.props.service.bgUrl+ ")"}}>
                 
                 

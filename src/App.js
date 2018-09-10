@@ -17,10 +17,13 @@ import styles from './App.module.scss';
 
 // font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 import { faPalette, faCode, faLaptop } from '@fortawesome/free-solid-svg-icons'
 
 
-library.add(faPalette, faCode, faLaptop )
+library.add(faPalette, faCode, faLaptop, faFacebook, faTwitter, faLinkedin )
 
 
 class AdEvents extends Component {
