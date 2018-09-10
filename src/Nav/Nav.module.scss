@@ -11,7 +11,7 @@ html, body {
 }
 
 .navbar-brand {
-    color: #014570;
+    color: #014570!important;
 }
 
 .Nav {
@@ -115,11 +115,8 @@ html, body {
 
 .logoimg {
     height: 50px;
-    border-radius: 50%;
-    margin-right: 30px;
     margin-top: 0;
     float: left;
-    padding-top: -15px;
 }
 
 .navTitle {
