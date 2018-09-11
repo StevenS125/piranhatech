@@ -6,13 +6,16 @@ html, body {
     background-color: white;
 }
 
-.navbar-light .navbar-brand {
-    font-family: 'Oleo Script', cursive;
+.headText {
+    font-size: 35px;
+    color: #014570!important;
+    font-weight: bold;
 }
 
-.navbar-brand {
-    color: #014570!important;
+.navbarcolor {
+    z-index: 1000;
 }
+
 
 .Nav {
     position: absolute;
@@ -218,6 +221,26 @@ html, body {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.heroSlogan {
+    position: absolute;
+    top: 77px;
+    left: 5%;
+    width: 90%;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.navOpen {
+z-index: 1000;
 }
 
   }

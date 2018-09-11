@@ -77,24 +77,28 @@ render() {
         return (
         <div>
                 <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
-                <Navbar color="faded" light expand="md">
-                <NavbarToggler onClick={this.toggle} />
+                
+                <Navbar color="faded" className={styles.navbarcolor} light expand="md">
                 <NavbarBrand href="/">
                 <img src="../../logoedit.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
-                Piranha Technologies</NavbarBrand>
-                <Collapse isOpen={this.state.isOpen} navbar>
+                <div className={styles.headText}>
+                Piranha Technologies
+                </div>
+                </NavbarBrand>
+                <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} className={styles.navOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
-                      <NavLink href="#/">Home</NavLink>
+                      <NavLink href="#/"><strong>Home</strong></NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#/bio">About Us</NavLink>
+                      <NavLink href="#/bio"><strong>About us</strong></NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#/Services">Services</NavLink>
+                      <NavLink href="#/Services"><strong>Services</strong></NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#/Contact">Contact Us</NavLink>
+                      <NavLink href="#/Contact"><strong>Contact Us</strong></NavLink>
                     </NavItem>
                     <NavItem>
                     </NavItem>

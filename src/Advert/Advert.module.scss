@@ -219,17 +219,23 @@ h2 {
 
     .heroSlogan {
         position: absolute;
-        top: 200px;
-        left: 20px;
-        width: 45%;
-        z-index: 0;
+        top: 85px !important;
+        left: 0 !important;
+        width: 100% !important;
+        height:375px !important;
+        z-index: 1;
         text-align: center;
         padding: 10px;
-        font-family: Raleway;
-        font-size: 30px;
+        font-family: 'Raleway';
+        font-size: 30px !important;
         font-weight: 800;
         color: white;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 5px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 40pt
     }
   }
