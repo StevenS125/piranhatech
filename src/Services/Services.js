@@ -13,6 +13,10 @@ import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-
 
 class Services extends Component {
 
+  componentDidMount(){
+    document.title = "Services | Piranha Technologies"
+  }
+
   render() {
     return (
         <div >

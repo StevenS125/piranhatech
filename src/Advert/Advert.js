@@ -53,6 +53,9 @@ class Advert extends Component {
         
       }
 
+      componentDidMount(){
+        document.title = "Piranha Technologies"
+      }
     
 
   render() {
