@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-import styles from './Map.module.scss';
 
 const style = {
+  position: 'relative',
   margin: '10%,10%,10%,25%',
   height: '50%',
   width: '50%',
@@ -27,7 +27,7 @@ export class MapContainer extends Component {
   onMapClicked = (props) => {
     if (this.state.showingInfoWindow) {
       this.setState({
-        showingInfoWindow: false,
+        showingInfoWindow: true,
         activeMarker: null
       })
     }
@@ -36,7 +36,6 @@ export class MapContainer extends Component {
 
     render() {
         return (
-          <div className={styles.mapArea}>
           <Map google={this.props.google}
           style={style}
           initialCenter={{
@@ -58,7 +57,6 @@ export class MapContainer extends Component {
               </div>
           </InfoWindow>
           </Map>
-          </div>
         );
       }
 

@@ -10,10 +10,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Contacter extends Component {
 
 
+    componentDidMount(){
+        document.title = "Contact Us | Piranha Technologies"
+      }
+
   render() {
     return (
         <div>
-                  <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
+                  <Animated animationIn="fadeIn" animationInDelay={0} isVisible={true}>
             <div className={styles.herocontact}>
             <img src="../../contactphoto1400.jpg" alt="piranha" className={styles.heroImg}/>
                 </div>
@@ -25,12 +29,30 @@ class Contacter extends Component {
               </div>
             </Animated>
                 </Animated>
-                <ScrollAnimation animateIn="bounceInRight" animateOnce={true} animatePreScroll={false}>
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false}>
                 <Contact></Contact>
                 </ScrollAnimation>
                 <br></br>
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false}>
+                <div className={styles.reviewHead}>What our Clients are saying about us</div>
+            <div className={styles.reviewContainer}>
+            <div className={styles.reviewTitle}>Kim Plyler of Kim's Kustoms</div>
+            <img src="../../kimskustomslogo.png" alt="Kim Kustom's Kim Plyler" className={styles.reviewImg}/>
+            <div className={styles.reviewDescript}>
+            "Piranha Technologies helped me reach customers I would have never been able to without my ecommerce platform"
+            </div>
             </div>
 
+            <div className={styles.reviewContainer}>
+            <div className={styles.reviewTitle}>Kevin Holmes of Straight Talk Consulting</div>
+            <img src="../../STTLogo.jpg" alt="Kim Kustom's Kim Plyler" className={styles.reviewImg}/>
+            <div className={styles.reviewDescript}>
+            "Piranha Technologies completely modernized my previos site and brought new relevence to my small business"
+            </div>
+            </div>
+
+            </ScrollAnimation>
+</div>
     );
 }
 }

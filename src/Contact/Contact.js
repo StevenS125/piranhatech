@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Contact.module.scss';
-import Map from '../Contact/googlemap/Map';
+import MapContainer from '../Contact/googlemap/Map';
 
 
 class Contact extends Component {
@@ -71,15 +71,16 @@ class Contact extends Component {
 <div className={styles.subhead}>4921 Jean Grimes Dr.</div>
 <div className={styles.subhead}>Charlotte NC, 28269</div>
 
-
-<div className={styles.mapContainer}>
-<Map />
+        <div className={styles.mapContainer}>
+<MapContainer
+/>
 </div>
-      </div>
+
+</div>
       <div className={styles.forming}>
       
       <div className={styles.head}>
-      <h2>Lets Build something together</h2>
+      <div className={styles.contactRight}>Lets Build something together</div>
       </div>
 
         <form id='form' onSubmit= {this.onSubmit}>
