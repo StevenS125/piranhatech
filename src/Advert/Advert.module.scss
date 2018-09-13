@@ -184,7 +184,7 @@ h2 {
       .mobileHero {
           padding-top: 20%;
           display: block;
-          height: 1200px;
+          height: 1300px;
           width: 100%;
           background-color: white;
       }
@@ -263,13 +263,14 @@ h2 {
 
     
 .subMobile {
+    margin-top: 20px;
     text-align: center;
     font-size: 40pt;
 
 }
 
     .forming {
-        background-color: #fafaff;
+        background-color: #fff;
         padding-top: 50px;
         padding-left: 5%;
         color: #001021;
@@ -281,14 +282,15 @@ h2 {
     }
     
     form {
+      margin-top: 20px;  
       max-width: 80%;
       margin: 0 auto;
       
       // positioning context
       > div {
         position: relative;
-        background: #fafaff;
-        border-bottom: 1px solid #ccc;
+        background: #fff;
+        border-bottom: 0;
         
         // Looks like placeholder
         > label {
@@ -306,14 +308,14 @@ h2 {
           width: 80%;
           border: 0;
           padding: 20px 20px 20px 50px;
-          background: #fafaff;
+          background: #fff;
           
           &:focus {
             
             // removing default focus style
             outline: 0;
             // adding new one
-            background: #fafaff;
+            background: #fff;
             
             & + label {
               opacity: 0;
