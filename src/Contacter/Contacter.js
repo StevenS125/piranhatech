@@ -20,6 +20,7 @@ class Contacter extends Component {
                   <Animated animationIn="fadeIn" animationInDelay={0} isVisible={true}>
             <div className={styles.herocontact}>
             <img src="../../contactphoto1400.jpg" alt="piranha" className={styles.heroImg}/>
+            <img src="../../contactmobile.jpg" alt="piranha" className={styles.heroMobileImg}/>
                 </div>
                 <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
               <div className={styles.heroText}>
