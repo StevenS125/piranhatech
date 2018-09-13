@@ -61,8 +61,58 @@ class Advert extends Component {
   render() {
     return (
 <div>
-        <div id="myNav" className={styles.container}>
+        <div id="myNav">
         <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
+        <div className={styles.mobileHero}>
+        <div>
+       <h1>Welcome To</h1>
+       <div className={styles.polyMobile}>
+       Success
+       </div>
+
+       <div className={styles.subMobile}>
+           Let us help your business
+       </div>
+       <div className={styles.subMobile}>With its Web Presence          
+       </div>
+       <div className={styles.subMobile}><strong>NOW</strong></div>
+       
+        </div>
+
+                <form id='form' onSubmit= {this.onSubmit}>
+
+<div>
+  <input onChange={this.onChange} type="text" id="first_name" name="fname" required placeholder=" " />
+  <label htmlFor="first_name">First Name</label>
+</div>
+
+<div>
+  <input onChange={this.onChange} type="text" id="last_name" name="lname" required placeholder=" " />
+  <label htmlFor="last_name">Last Name</label>
+</div>
+
+<div>
+  <input onChange={this.onChange} type="email" id="email" name="email" required placeholder=" " />
+  <label htmlFor="email">Email Address</label>
+  <div className={styles.requirements}>
+    Must be a valid email address.
+  </div>
+</div>
+
+<div>
+  <textarea onChange={this.onChange} type="text" id="password" name="msg" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{100,}" />
+  <label htmlFor="text">Message</label>
+  <div className={styles.requirements}>
+    Your Message must be atleast 100 characters in length
+  </div>
+</div>
+
+<input type="submit" value="Contact Us!" />
+
+</form>
+
+
+        </div>
         <img src="../../homepage2.jpg" alt="piranha" className={styles.container}/>
         <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
     <div className={styles.heroSlogan}>
