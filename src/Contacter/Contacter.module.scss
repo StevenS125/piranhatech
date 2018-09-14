@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+.heroMobileImg {
+    display: none;
+    width: 100%;
+}
+
 .heroText {
     position: absolute;
     top: 35%;
@@ -95,6 +100,7 @@
     }
 
     .heroMobileImg {
+        display: block;
         width: 100%;
     }
 
