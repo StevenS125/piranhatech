@@ -17,9 +17,6 @@ class Bio extends Component {
   </div>
   </Animated>  
           <div className={styles.abouthead}>About Kevin Holmes</div>
-<div className={styles.aboutPhoto}>
-          <img src="../../candid.jpg" alt="Kevin Holmes Posing in Charlotte" className={styles.candidPhoto}/>
-</div>
 
 <div className={styles.textLeft}> 
 Kevin Holmes is a native of Brooklyn, New York.  He grew up in the infamous Red Hook Projects, known for being the backdrop of the independent and award winning film “Straight Out of Brooklyn”. Kevin is the youngest of three boys. He graduated from George Westinghouse Vocational High School where he studied electrical installation.
