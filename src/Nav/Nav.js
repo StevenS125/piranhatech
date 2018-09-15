@@ -48,16 +48,16 @@ render() {
                 <Collapse isOpen={this.state.isOpen} className={styles.navOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
-                      <NavLink href="#/"><strong>Home</strong></NavLink>
+                      <NavLink href="#/"><div className={styles.linkStyles}>Home</div></NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#/bio"><strong>About us</strong></NavLink>
+                      <NavLink href="#/bio"><div className={styles.linkStyles}>Who We Are</div></NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#/Services"><strong>Services</strong></NavLink>
+                      <NavLink href="#/Services"><div className={styles.linkStyles}>Services</div></NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#/Contact"><strong>Contact Us</strong></NavLink>
+                      <NavLink href="#/Contact"><div className={styles.linkStyles}>Contact Us</div></NavLink>
                     </NavItem>
                     <NavItem>
                     </NavItem>
