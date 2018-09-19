@@ -1,31 +1,56 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import styles from "./Nav.module.scss";
 import {Animated} from "react-animated-css";
-import {
-        Collapse,
-        Navbar,
-        NavbarToggler,
-        NavbarBrand,
-        Nav,
-        NavItem,
-        NavLink} from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
       
 
 
 class Header extends Component {
         constructor(props) {
                 super(props);
-                this.toggle = this.toggle.bind(this);
                 this.state = {
-                        isOpen: false
+                  listopen: false,
                 };
 }
 
-toggle() {
-        this.setState({
-          isOpen: !this.state.isOpen
-        });
-      }
+
+
+
+openList = () => {
+  return (
+    <Animated animationIn="fadeInDown" animationInDelay={0} isVisible={true}>
+          <div className={styles.mobileDrop}>
+                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/">Home</Link></div>
+                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Services">Services</Link></div>   
+                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Bio">Who We Are</Link></div> 
+                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Contact">Contact Us</Link></div>
+    </div>
+    </Animated>
+  );
+}
+
+closeList = () => {
+  this.setState({
+    listopen: false
+});
+}
+
+
+
+
+toggleList = () => {
+if (!this.state.listopen) {
+  this.setState({
+    listopen: true
+  });
+} else {
+  this.setState({
+    listopen: false
+  })
+}
+  }
 
 
 
@@ -34,38 +59,36 @@ render() {
 
 
         return (
-        <div>
-                <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
-                
-                <Navbar color="faded" className={styles.navbarcolor} light expand="md">
-                <NavbarBrand href="/">
-                <img src="../../logoedit.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
-                <div className={styles.headText}>
-                Piranha Technologies
-                </div>
-                </NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
-                <Collapse isOpen={this.state.isOpen} className={styles.navOpen} navbar>
-                  <Nav className="ml-auto" navbar>
-                    <NavItem>
-                      <NavLink href="#/"><div className={styles.linkStyles}>Home</div></NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#/bio"><div className={styles.linkStyles}>Who We Are</div></NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#/Services"><div className={styles.linkStyles}>Services</div></NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#/Contact"><div className={styles.linkStyles}>Contact Us</div></NavLink>
-                    </NavItem>
-                    <NavItem>
-                    </NavItem>
-                  </Nav>
-                </Collapse>
-              </Navbar>
-              </Animated>
-            </div>
+          <div>
+              <div className={styles.navbar}>
+                    <img className={styles.navbarImg} src="../../logoedit.jpg" alt="piranhatechlogo">
+                     </img>
+                        <div className={styles.navbarTitle}>Piranha Technologies
+                          <div className={styles.linkContainer}>
+                         <Link className={styles.links} to="/">Home</Link>
+                         <Link className={styles.links} to="/Services">Services</Link>   
+                         <Link className={styles.links} to="/Bio">Who We Are</Link> 
+                         <Link className={styles.links} to="/Contact">Contact Us</Link>
+                            <a className={styles.icons} href="https://facebook.com/piranhatechnologies" target="blank"><FontAwesomeIcon icon={faFacebook} size="xs" /></a>
+                            <a className={styles.icons} href="https://twitter.com/thepiranhatech" target="blank"><FontAwesomeIcon icon={faTwitter} size="xs" /></a>  
+                            <a className={styles.icons} href="https://linkedin.com/piranha-tech/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="xs" /></a>  
+                          </div> 
+                         </div>
+                         <div className={styles.navbarMobile}>
+                          Piranha Technologies
+                         </div>
+                         <div className={styles.burger} onClick={this.toggleList}>
+                                <div className={styles.bar1}></div>
+                                <div className={styles.bar2}></div>
+                                <div className={styles.bar3}></div>
+                              </div>  
+          </div>
+          <div className={styles.mobileRow}>
+      { this.state.listopen ? this.openList() : false }
+              </div>
+        </div>
+        
+          
 
 );
 }

@@ -1,249 +1,142 @@
-.mobileNav {
-    visibility: hidden;
-}
 
-html, body {
-    background-color: white;
-}
-
-.headText {
-    font-size: 35px;
-    color: #014570!important;
-    font-weight: bold;
-}
-
-.linkStyles {
-    font-weight: bold;
-}
-
-.navbarcolor {
-    z-index: 1000;
-}
-
-
-.Nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 55px;
-    z-index: 1;
+.navbar {
+    height: 80px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding-top: 10px;
-    text-decoration: 'none';
 }
 
-.heroSlogan {
-    position: absolute;
-    top: 350px;
-    left: 50px;
-    width: 45%;
-    z-index: 1;
-    text-align: center;
-    padding: 10px;
-    font-family: Raleway;
-    font-size: 30px;
-    font-weight: 800;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-.heroButton {
-    margin-top: 20px;
-    color: white;
-    background-color: transparent;
-    font-family: Raleway;
-    font-size: 30px;
-    border: 2px solid white;
-    padding: 10px;
-    border-radius: 5%;
-}
-
-.heroButton:hover {
-    background-color: black; 
-    transition: background-color .3s linear;
-    color: white;
-    cursor: pointer;
-}
-
-.masthead {
-    padding: 15px 0 0 20px;
-    color: white;
+.navbarImg {
+    margin-top: 15px;
+    margin-left: 10px;
     float: left;
-    font-size: 40px;
-    margin: -25px 0 0 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
+    height: 50px;
+    width: 80px;
 }
+
+.navbarTitle {
+    font-size: 50px;
+    color: #014470;
+    font-weight: 800;
+    width: 100%;
+    margin-right: 0;
+}
+
+.linkContainer {
+    width: 50%;
+    height: 80px;
+    float: right;
+}
+
+
 
 .links {
-    color: white;
-    float: right;
-    margin: 5px 15px 10px 15px;
+    color: #014470;
+    padding: 10px;
     font-family: 'Raleway';
     font-size: 20px;
     font-weight: bold;
     text-decoration: 'none';
 }
 
-
-.links:hover { 
+.links:hover {
     transition: color .3s linear;
-    color: black;
+    color: #f3f3f3;
     cursor: pointer;
 }
 
-.logotech {
-    margin: 20px 5px 0 20px;
-    float: left;
-    border-radius: 50%;
-    height: 50px;
+.icons {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #014470;
+    font-size: 30px;
 }
 
-
-.container {
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-  }
-
-  .menurow {
-	height: 80vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    align-items: center;
-    color: white;
-    float: right;
-    padding-right: 10px;
-    visibility: hidden;
-}
-
-.logoimg {
-    height: 50px;
-    margin-top: 0;
-    float: left;
-}
-
-.navTitle {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 40px;
-    z-index: 1;
-    width: 100%;
-    color: white;
-    float: left;
-    font-size: 25px;
-    font-family: 'Monoton', cursive;
-    text-align: center;
-    background-color: none;
-}
-
-
-
-
-  @media (max-width: 900px) {
-    .menurow {
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
-        float: right;
-        padding-right: 10px;
-        visibility: visible;
-    }
-
-    .mobileNav {
-        visibility: visible;
-    }
-
-    .Nav {
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 80px;
-        z-index: 0;
-        width: 100%;
-        border-bottom: none;
-    }
-
-    .links {
-        color: white;
-        float: right;
-        width: 600px;
-        margin: 10px 15px 10px 15px;
-        font-family: 'Raleway';
-        font-size: 40px;
-        font-weight: bold;
-        text-decoration: 'none';
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 100;
-
-    }
-
-
-.navTitle {
-    visibility: visible;
-    height:200px;
-    color: white;
-    float: left;
-    font-size: 55px;
-    font-family: 'Monoton', cursive;
-    text-align: center;
-    background-color: #222E50;
-}
-
-.burgContainer {
-    cursor: pointer;
-    float: left;
-    z-index: 100;
-    margin-left: 20px;
-    margin-top: 20px;
-    background-color: #222E50;
-
+.burger {
+    display: none;
 }
 
 .bar1, .bar2, .bar3 {
     width: 85px;
     height: 15px;
-    background-color: white;
+    background-color: #014470;
     margin: 21px 20px;
     transition: 0.4s;
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.heroSlogan {
-    position: absolute;
-    top: 77px;
-    left: 5%;
-    width: 90%;
-    z-index: 1;
-    text-align: center;
-    padding: 10px;
-    font-family: Raleway;
+.navbarMobile { 
+    display: none;
     font-size: 30px;
-    font-weight: 800;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
 }
+
+
+  @media (max-width: 900px) {
+
+    .navbar {
+        height: 200px;
+        width: 100%;
+    }
+
+    .navbarImg {
+        margin-top: 15px;
+        margin-left: 10px;
+        float: left;
+        height: 100px;
+        width: 150px;
+    }
+
+
+
+    .linkContainer {
+        display: none;
+        width: 50%;
+        height: 80px;
+        float: right;
+    }
+
+    .navbarTitle {
+        display: none;
+        font-size: 50px;
+        color: #014470;
+        font-weight: 800;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .navbarMobile {
+        position: fixed;
+        top: 0;
+        left: 160px;
+        width: 70%;
+        font-size: 60px;
+        display: block;
+        font-weight: bold;
+        color: #014470;
+        text-align: start;
+    }
+
+    .burger {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        margin-top: 10px;
+        margin-right: 20px; 
+        border: 2px solid #014470;
+        height: 140px;
+        display: block;
+        border-radius: 10%;
+    }
+
+    .linksMobile {
+        width: 100%;
+        height:100px;
+        font-size: 80px;
+        color: #014470;
+        text-align: center;
+    }
+
+    .mobileDrop {
+        height: 500px;
+    }
+
 
 
   }
