@@ -23,8 +23,7 @@ openList = () => {
     <Animated animationIn="fadeInDown" animationInDelay={0} isVisible={true}>
           <div className={styles.mobileDrop}>
                 <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/">Home</Link></div>
-                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Services">Services</Link></div>   
-                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Bio">Who We Are</Link></div> 
+                <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Services">Services</Link></div>    
                 <div><Link onClick={ this.closeList } className={styles.linksMobile} to="/Contact">Contact Us</Link></div>
     </div>
     </Animated>
@@ -67,7 +66,6 @@ render() {
                           <div className={styles.linkContainer}>
                          <Link className={styles.links} to="/">Home</Link>
                          <Link className={styles.links} to="/Services">Services</Link>   
-                         <Link className={styles.links} to="/Bio">Who We Are</Link> 
                          <Link className={styles.links} to="/Contact">Contact Us</Link>
                             <a className={styles.icons} href="https://facebook.com/piranhatechnologies" target="blank"><FontAwesomeIcon icon={faFacebook} size="xs" /></a>
                             <a className={styles.icons} href="https://twitter.com/thepiranhatech" target="blank"><FontAwesomeIcon icon={faTwitter} size="xs" /></a>  
