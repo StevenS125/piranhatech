@@ -30,7 +30,7 @@ class Contact extends Component {
     e.preventDefault();
     // get our form data out of state
     const pData = this.state;
-    fetch('https://ptemailserver.herokuapp.com/', {
+    fetch('https://ptmailer.herokuapp.com/api/', {
     method: 'post',
     headers: {
       'Accept': 'application/json',
