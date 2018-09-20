@@ -72,15 +72,16 @@ render() {
                             <a className={styles.icons} href="https://linkedin.com/piranha-tech/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="xs" /></a>  
                           </div> 
                          </div>
-                         <div className={styles.navbarMobile}>
-                          Piranha Technologies
-                         </div>
+          </div>
+          <div className={styles.navbarMobile}>
                          <div className={styles.burger} onClick={this.toggleList}>
                                 <div className={styles.bar1}></div>
                                 <div className={styles.bar2}></div>
                                 <div className={styles.bar3}></div>
-                              </div>  
-          </div>
+                              </div>
+                          <div className={styles.mobileHead}>Piranha Technologies</div>
+                        
+                      </div>        
           <div className={styles.mobileRow}>
       { this.state.listopen ? this.openList() : false }
               </div>

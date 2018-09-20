@@ -74,6 +74,7 @@
     .navbar {
         height: 200px;
         width: 100%;
+        display: none;
     }
 
     .navbarImg {
@@ -104,28 +105,37 @@
     }
 
     .navbarMobile {
-        position: absolute;
-        top: 0;
-        left: 20px;
-        width: 70%;
+        width: 100%;
         font-size: 60px;
         display: block;
         font-weight: bold;
         color: #014470;
         text-align: start;
         z-index: 9;
+        padding-top: 20px;
+        padding-left: 20px;
+        height: 220px;
+    }
+
+    .mobileHead {
+        width: 70%;
+        height: 200px;
+        float: left;
+    }
+
+    .burgerContainer {
+        width: 25%;
     }
 
     .burger {
-        position: fixed;
-        top: 10px;
-        right: 20px;
         margin-top: 10px;
         margin-right: 20px; 
         border: 2px solid #014470;
         height: 140px;
+        width: 130px;
         display: block;
         border-radius: 10%;
+        float: left;
     }
 
     .linksMobile {
@@ -139,7 +149,5 @@
     .mobileDrop {
         height: 500px;
     }
-
-
 
   }
