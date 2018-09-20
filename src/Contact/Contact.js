@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Contact.module.scss';
-import MapContainer from '../Contact/googlemap/Map';
+
 
 
 class Contact extends Component {
@@ -63,20 +63,6 @@ class Contact extends Component {
   render() {
     return (
       <div>
-<div className={styles.contactContainer}>
-<div className={styles.contactHead}>Headquarters</div>
-<div className={styles.subhead}>704-842-3944</div>
-<div className={styles.subhead}>Ben@PiranhaTechnologies.com</div>
-<br></br>
-<div className={styles.subhead}>4921 Jean Grimes Dr.</div>
-<div className={styles.subhead}>Charlotte NC, 28269</div>
-
-        <div className={styles.mapContainer}>
-<MapContainer
-/>
-</div>
-
-</div>
       <div className={styles.forming}>
       
       <div className={styles.head}>

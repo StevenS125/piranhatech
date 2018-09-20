@@ -54,6 +54,45 @@
     text-align: center;
 }
 
+
+.contactContainer {
+    float: left;
+    background: #fafaff; 
+    height: 600px;
+    width: 50%;
+    position: relative;
+}
+
+.mapContainer {
+  padding-top: 5%;
+  padding-left: 25%;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.contactRight {
+  padding-top: 0;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #222E50;
+  }
+
+.contactHead {
+padding-top: 50px;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+color: #222E50;
+}
+
+.subhead {
+  font-weight: bold;
+  color: #001021;
+  text-align: center;
+}
+
 .reviewImg {
     float: left;
     margin: 5px 5px 5px 10px;
@@ -119,6 +158,14 @@
         color: #222E50;
         font-weight: bold;
         margin-bottom: 20px;
+    }
+
+    .contactContainer {
+        border-top: 0;
+        float: left;
+        height: 600px;
+        width: 100%;
+        position: relative;
     }
 
 

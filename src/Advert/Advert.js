@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Animated} from "react-animated-css";
+import Contact from "../Contact/Contact"
 
 
 //components
@@ -79,38 +80,7 @@ class Advert extends Component {
        
         </div>
 
-                <form id='form' onSubmit= {this.onSubmit}>
-
-<div>
-  <input onChange={this.onChange} type="text" id="first_name" name="fname" required placeholder=" " />
-  <label htmlFor="first_name">First Name</label>
-</div>
-
-<div>
-  <input onChange={this.onChange} type="text" id="last_name" name="lname" required placeholder=" " />
-  <label htmlFor="last_name">Last Name</label>
-</div>
-
-<div>
-  <input onChange={this.onChange} type="email" id="email" name="email" required placeholder=" " />
-  <label htmlFor="email">Email Address</label>
-  <div className={styles.requirements}>
-    Must be a valid email address.
-  </div>
-</div>
-
-<div>
-  <textarea onChange={this.onChange} type="text" id="password" name="msg" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{100,}" />
-  <label htmlFor="text">Message</label>
-  <div className={styles.requirements}>
-    Your Message must be atleast 100 characters in length
-  </div>
-</div>
-
-<input type="submit" value="Contact Us!" />
-
-</form>
-
+               <Contact />
 
         </div>
         <img src="../../homepage2.jpg" alt="piranha" className={styles.container}/>

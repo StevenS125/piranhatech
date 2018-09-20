@@ -3,6 +3,7 @@ import styles from './Contacter.module.scss';
 import {Animated} from "react-animated-css";
 import Contact from '../Contact/Contact';
 import ScrollAnimation from 'react-animate-on-scroll';
+import MapContainer from '../Contact/googlemap/Map';
 
 
 
@@ -31,6 +32,20 @@ class Contacter extends Component {
             </Animated>
                 </Animated>
                 <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false}>
+                <div className={styles.contactContainer}>
+<div className={styles.contactHead}>Headquarters</div>
+<div className={styles.subhead}>704-842-3944</div>
+<div className={styles.subhead}>Ben@PiranhaTechnologies.com</div>
+<br></br>
+<div className={styles.subhead}>4921 Jean Grimes Dr.</div>
+<div className={styles.subhead}>Charlotte NC, 28269</div>
+
+        <div className={styles.mapContainer}>
+<MapContainer
+/>
+</div>
+
+</div>
                 <Contact></Contact>
                 </ScrollAnimation>
                 <br></br>
