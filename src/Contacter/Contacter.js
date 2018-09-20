@@ -46,10 +46,8 @@ class Contacter extends Component {
 </div>
 
 </div>
-                <Contact></Contact>
-                </ScrollAnimation>
+                <Contact />
                 <br></br>
-                <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false}>
                 <div className={styles.reviewHead}>What our Clients are saying about us</div>
             <div className={styles.reviewContainer}>
             <div className={styles.reviewTitle}>Kim Plyler of Kim's Kustoms</div>
