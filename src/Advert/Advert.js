@@ -24,8 +24,7 @@ class Advert extends Component {
                     bgUrl: "soc4.jpg",
                     logoUrl: "",
                     h1_txt: "Social Media",
-                    h6_txt: "Something else but smaller",
-                    p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
+                    h6_txt: "Maximising the potential of your social media presence",
                     detailUrl: ""
 
                 },
@@ -34,8 +33,7 @@ class Advert extends Component {
                     bgUrl: "dev3.jpg",
                     logoUrl: "http://simpleicon.com/wp-content/uploads/computer-5.png",
                     h1_txt: "Web Development",
-                    h6_txt: "Something else but smaller",
-                    p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
+                    h6_txt: "Designing and building modern web solutions for emerging businesses",
                     detailUrl: ""
 
                 },
@@ -44,8 +42,7 @@ class Advert extends Component {
                     bgUrl: "logo2.jpg",
                     logoUrl: "http://simpleicon.com/wp-content/uploads/computer-5.png",
                     h1_txt: "Logo and Graphic Design",
-                    h6_txt: "Something else but smaller",
-                    p_txt: "this is a lot of text that is designed to be a paragraph. I hope this is enough because i have typed a lot og shit",
+                    h6_txt: "Raising the standard of your brand aesthetic",
                     detailUrl: ""
 
                 }
@@ -135,8 +132,7 @@ class AdPane extends Component {
                 <div className={styles.shader}>
                 <h2>{this.props.service.h1_txt}</h2>
                 <h6>{this.props.service.h6_txt}</h6>
-                <p>{this.props.service.p_txt}</p>
-                <button className="btn btn-info">button</button>
+                <div className={styles.btn}><a href="#/services" >View</a></div>
                 </div>
             </div>
         </ScrollAnimation>

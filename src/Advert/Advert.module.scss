@@ -7,6 +7,10 @@ h2 {
     color: black;
     font-size: 48pt;
 }
+h6 {
+    margin-bottom: 2%;
+    font-size: 26px
+}
 
 .shader {
     padding-left: 50%;
@@ -48,11 +52,39 @@ h2 {
     background-color: white;
     color: #014470;
     padding-top: 2%;
-    box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.582), 0 0 0 0 rgba(255, 255, 255, 0.219);
+    box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.582), 0 0 0 0 rgba(255, 255, 255, 0.712);
 }
 
 .adMain:hover { 
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
+}
+.btn {
+    margin-top: 5%;
+    color: white;
+    background-color: black;
+    font-family: Raleway;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 5%;
+    width: 15%;
+    height: 40px;
+    text-align: center;
+    float: right;
+     a {
+        color: white
+    }
+}
+
+
+.btn:hover {
+    color: black;
+    background-color: white; 
+    transition: background-color .3s linear;
+    cursor: pointer;
+    a {
+        color: black
+    }
 }
 
 .fas {
