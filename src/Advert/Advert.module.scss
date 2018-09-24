@@ -5,11 +5,13 @@ h1 {
 
 h2 {
     color: black;
-    font-size: 48pt;
+    font-size: 60pt;
+    text-align: center;
 }
 h6 {
     margin-bottom: 2%;
-    font-size: 26px
+    font-size: 34px;
+    text-align: center;
 }
 
 .shader {
@@ -59,16 +61,15 @@ h6 {
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
 }
 .btn {
+    text-align: center;
     margin-top: 5%;
     color: white;
     background-color: black;
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 30px;
     border: 2px solid white;
-    padding: 3px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5%;
-    width: 15%;
-    height: 40px;
     text-align: center;
     float: right;
      a {
@@ -205,6 +206,25 @@ h6 {
 
   @media (max-width: 900px) {
 
+
+
+    .adContainer {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 500px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        text-shadow: 2px 3px 6px rgba(247, 244, 244, 0.534),
+                     0px -5px 35px rgba(255,255,255,0.3);
+    }
+
+    .shader {
+        padding-left: 0;
+        
+        text-overflow: ellipsis;
+    }
+
     .container {
         display: none;
         margin-top: 0px;
@@ -216,7 +236,7 @@ h6 {
       .mobileHero {
           padding-top: 20%;
           display: block;
-          height: 1300px;
+          height: 1400px;
           width: 100%;
           background-color: white;
       }

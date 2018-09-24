@@ -24,7 +24,7 @@ class Advert extends Component {
                     bgUrl: "soc4.jpg",
                     logoUrl: "",
                     h1_txt: "Social Media",
-                    h6_txt: "Maximising the potential of your social media presence",
+                    h6_txt: "Maximizing the potential of your social media presence",
                     detailUrl: ""
 
                 },
