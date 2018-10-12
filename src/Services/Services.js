@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Animated} from "react-animated-css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ScrollAnimation from 'react-animate-on-scroll';
 //components
 
 //styles
@@ -30,7 +31,7 @@ class Services extends Component {
 </div>
         </div>
           </Animated>
-
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} animatePreScroll={false}>
           <div>
             <div className={styles.servicesHead}>
             Some of our Services
@@ -71,7 +72,7 @@ Let us help you design your Social Media Pages, Marketing Campaigns or just plai
                 
         </div>
           </div>
-
+</ScrollAnimation>
 
         </div>
 
