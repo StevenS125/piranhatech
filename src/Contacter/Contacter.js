@@ -61,7 +61,7 @@ class Contacter extends Component {
             <div className={styles.reviewTitle}>Kevin Holmes of Straight Talk Consulting</div>
             <img src="../../STTLogo.jpg" alt="Kim Kustom's Kim Plyler" className={styles.reviewImg}/>
             <div className={styles.reviewDescript}>
-            "Piranha Technologies completely modernized my previos site and brought new relevence to my small business"
+            "Piranha Technologies completely modernized my previous site and brought new relevence to my small business"
             </div>
             </div>
 
