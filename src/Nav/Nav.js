@@ -35,7 +35,10 @@ openList = () => {
 
 closeList = () => {
   this.setState({
-    listopen: false
+    listopen: false,
+    bar1: styles.bar1,
+    bar2: styles.bar2,
+    bar3: styles.bar3
 });
 }
 
