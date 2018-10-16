@@ -60,7 +60,7 @@ class Advert extends Component {
     return (
 <div>
         <div id="myNav">
-        <Animated animationIn="bounceInLeft" animationInDelay={0} isVisible={true}>
+        <Animated animationIn="fadeIn" animationInDelay={0} isVisible={true}>
         <div className={styles.mobileHero}>
         <div>
        <h1>Welcome To</h1>
@@ -80,7 +80,10 @@ class Advert extends Component {
                <Contact />
 
         </div>
-        <img src="../../homepage2.jpg" alt="piranha" className={styles.container}/>
+        <video autoPlay muted loop className={styles.container}>
+  <source src="blurpeep.mp4" type="video/mp4"></source>
+    </video>
+        {/* <img src="../../homepage2.jpg" alt="piranha" className={styles.container}/> */}
         <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
     <div className={styles.heroSlogan}>
     <h1>Drive your Company into the</h1>
