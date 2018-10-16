@@ -86,6 +86,7 @@ h6 {
     a {
         color: black
     }
+    transform:scale(1.1);
 }
 
 .fas {
@@ -133,39 +134,48 @@ h6 {
     border-radius: 5%;
     background-color: transparent; 
 
-    // animation-name: rainbow;
-    // animation-duration: 1s;
-    // animation-iteration-count: infinite;
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 
-    // @keyframes rainbow{
-    //     0% {
-    //       background-color: transparent;
-    //     }
-    //     13% {
-    //         background-color: rgb(255, 0, 221);
-    //     }
-    //     25% {
-    //         background-color: rgb(1, 58, 247);
-    //     }
-    //     37% {
-    //         background-color: rgb(0, 255, 179);
-    //       }
-    //       50% {
-    //           background-color: rgb(30, 255, 0);
-    //       }
-    //       63% {
-    //           background-color: rgb(247, 243, 1);
-    //       }
-    //       75% {
-    //         background-color: rgb(247, 120, 1);
-    //     }
-    //     83% {
-    //         background-color: rgb(247, 1, 1);
-    //     }
-    //     100% {
-    //         background-color: transparent;
-    //     }
-    //   }
+    @keyframes rainbow{
+        0% {
+          padding: 10px;
+          font-size: 30px;
+        }
+        13% {
+            padding: 12px;
+            font-size: 32px;
+        }
+        25% {
+            padding: 14px;
+            font-size: 34px;
+        }
+        37% {
+            padding: 16px;
+            font-size: 36px;
+          }
+          50% {
+            padding: 18px;
+            font-size: 38px;
+          }
+          63% {
+            padding: 16px;
+            font-size: 36px;
+          }
+          75% {
+            padding: 14px;
+            font-size: 34px;
+        }
+        83% {
+            padding: 12px;
+            font-size: 32px;
+        }
+        100% {
+            padding: 10px;
+            font-size: 30px;
+        }
+      }
 }
 
 .heroButton:hover {
@@ -173,6 +183,7 @@ h6 {
     transition: background-color .3s linear;
     color: black;
     cursor: pointer;
+    transform:scale(1.5);
 }
 
 .masthead {
@@ -240,6 +251,27 @@ h6 {
 
   @media (max-width: 900px) {
 
+    h2 {
+        color: white;
+    }
+
+    .btn {
+        text-align: center;
+        margin-top: 5%;
+        color: white;
+        background-color: black;
+        font-family: Raleway;
+        font-size: 30px;
+        border: 2px solid white;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5%;
+        text-align: center;
+        float: none;
+        
+         a {
+            color: white
+        }
+    }
 
 
     .adContainer {
@@ -248,7 +280,7 @@ h6 {
         height: 500px;
         text-align: center;
         font-family: 'Raleway', sans-serif;
-        color: black;
+        color: white;
         text-shadow: 2px 3px 6px rgba(247, 244, 244, 0.534),
                      0px -5px 35px rgba(255,255,255,0.3);
     }
