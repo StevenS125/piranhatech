@@ -134,48 +134,48 @@ h6 {
     border-radius: 5%;
     background-color: transparent; 
 
-    animation-name: rainbow;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    // animation-name: rainbow;
+    // animation-duration: 5s;
+    // animation-iteration-count: infinite;
 
-    @keyframes rainbow{
-        0% {
-          padding: 10px;
-          font-size: 30px;
-        }
-        13% {
-            padding: 12px;
-            font-size: 32px;
-        }
-        25% {
-            padding: 14px;
-            font-size: 34px;
-        }
-        37% {
-            padding: 16px;
-            font-size: 36px;
-          }
-          50% {
-            padding: 18px;
-            font-size: 38px;
-          }
-          63% {
-            padding: 16px;
-            font-size: 36px;
-          }
-          75% {
-            padding: 14px;
-            font-size: 34px;
-        }
-        83% {
-            padding: 12px;
-            font-size: 32px;
-        }
-        100% {
-            padding: 10px;
-            font-size: 30px;
-        }
-      }
+    // @keyframes rainbow{
+    //     0% {
+    //       padding: 10px;
+    //       font-size: 30px;
+    //     }
+    //     13% {
+    //         padding: 12px;
+    //         font-size: 32px;
+    //     }
+    //     25% {
+    //         padding: 14px;
+    //         font-size: 34px;
+    //     }
+    //     37% {
+    //         padding: 16px;
+    //         font-size: 36px;
+    //       }
+    //       50% {
+    //         padding: 18px;
+    //         font-size: 38px;
+    //       }
+    //       63% {
+    //         padding: 16px;
+    //         font-size: 36px;
+    //       }
+    //       75% {
+    //         padding: 14px;
+    //         font-size: 34px;
+    //     }
+    //     83% {
+    //         padding: 12px;
+    //         font-size: 32px;
+    //     }
+    //     100% {
+    //         padding: 10px;
+    //         font-size: 30px;
+    //     }
+    //   }
 }
 
 .heroButton:hover {
@@ -183,7 +183,7 @@ h6 {
     transition: background-color .3s linear;
     color: black;
     cursor: pointer;
-    transform:scale(1.5);
+    transform:scale(1.2);
 }
 
 .masthead {
