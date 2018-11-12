@@ -80,11 +80,12 @@ class Advert extends Component {
                <Contact />
 
         </div>
-        <video autoPlay muted loop className={styles.container}  src="blurpeep.mp4" type="video/mp4">
-
-    </video>
         {/* <img src="../../homepage2.jpg" alt="piranha" className={styles.container}/> */}
         <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
+        <div className={styles.container}>
+            <video autoPlay muted loop className={styles.vidheight}  src="blurpeep.mp4" type="video/mp4" /> 
+        </div>
+    
     <div className={styles.heroSlogan}>
     <h1>Drive your Company into the</h1>
         <h1> Ecommerce World</h1>

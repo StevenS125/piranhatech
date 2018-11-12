@@ -72,9 +72,13 @@ render() {
         return (
           <div>
               <div className={styles.navbar}>
-                    <img className={styles.navbarImg} src="../../logoedit.jpg" alt="piranhatechlogo">
-                     </img>
-                        <div className={styles.navbarTitle}>Piranha Technologies
+              <div className={styles.navTitle}>
+                     <div className={styles.navbarTitle}>
+                     <img className={styles.navbarImg} src="../../logoedit.jpg" alt="piranhatechlogo"></img>
+                     <span className={styles.navWords}>Piranha Technologies</span>
+                     </div>
+              </div>
+                        <div className={styles.navBarLinks}>
                           <div className={styles.linkContainer}>
                          <Link className={styles.links} to="/">Home</Link>
                          <Link className={styles.links} to="/Services">Services</Link>   
@@ -82,7 +86,8 @@ render() {
                             <a className={styles.icons} href="https://facebook.com/piranhatechnologies" target="blank"><FontAwesomeIcon icon={faFacebook} size="xs" /></a>
                             <a className={styles.icons} href="https://twitter.com/thepiranhatech" target="blank"><FontAwesomeIcon icon={faTwitter} size="xs" /></a>  
                             <a className={styles.icons} href="https://linkedin.com/company/piranha-tech/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="xs" /></a>  
-                          </div> 
+                          </div>
+                          
                          </div>
           </div>
           <div className={styles.navbarMobile}>

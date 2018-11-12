@@ -1,31 +1,44 @@
-
 .navbar {
-    height: 80px;
     width: 100%;
+    height: 110px;
+}
+
+.navTitle {
+    width:100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbarImg {
-    display: block;
-    margin-top: 15px;
-    margin-left: 10px;
-    float: left;
-    height: 50px;
-    width: 80px;
+    position: absolute;
+    left: 28%;
+    top:17px;
+    height: 40px;
+    width: 60px;
+}
+
+.navWords {
+    position: absolute;
+    top: 5px;
+    left: 35%;
+    height:50px;
+    line-height: 60px;
 }
 
 .navbarTitle {
-    font-size: 50px;
+    line-height: 60px;
+    font-size: 40px;
     color: #014470;
     font-weight: 800;
-    width: 100%;
-    margin-right: 0;
 }
 
 .linkContainer {
-    width: 50%;
-    height: 80px;
+    width: 100%;
+    height: 50px;
     float: right;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -158,7 +171,7 @@
     .barChange1 {
         width: 130px;
         height: 15px;
-        background-color: #014470;
+        background-color: white;
         margin: 21px 20px;
         transition: 0.4s;
         -webkit-transform: rotate(-45deg) translate(-20px, -15px);

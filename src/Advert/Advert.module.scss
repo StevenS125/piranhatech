@@ -217,12 +217,19 @@ h6 {
     height: 50px;
 }
 
+.vidheight {
+    height: 125vh;
+    width: 100%;
+
+}
 
 .container {
     margin-top: 0;
-    height: 100%;
+    display: block;
     width: 100%;
     z-index: -3;
+    height: 90vh;
+    overflow: hidden;
   }
 
   .menurow {
