@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import ScrollAnimation from 'react-animate-on-scroll';
 import {Animated} from "react-animated-css";
 import Contact from "../Contact/Contact"
 
 
 //components
-
+import AdPane from './AdPane'
 //styles
 import styles from './Advert.module.scss';
-
-
-
 
 
 class Advert extends Component {
@@ -67,41 +63,34 @@ class Advert extends Component {
        <div className={styles.polyMobile}>
        Success
        </div>
-
        <div className={styles.subMobile}>
            Let us help your business
        </div>
        <div className={styles.subMobile}>With its Web Presence          
        </div>
        <div className={styles.subMobile}><strong>NOW</strong></div>
-       
         </div>
 
                <Contact />
 
         </div>
-        {/* <img src="../../homepage2.jpg" alt="piranha" className={styles.container}/> */}
         <Animated animationIn="fadeIn" animationInDelay={1000} isVisible={true}>
         <div className={styles.container}>
-            <video autoPlay muted loop className={styles.vidheight}  src="blurpeep.mp4" type="video/mp4" /> 
+            <video autoPlay muted loop className={styles.vidheight}  src="drawing.mp4" type="video/mp4" /> 
         </div>
     
     <div className={styles.heroSlogan}>
-    <h1>Drive your Company into the</h1>
-        <h1> Ecommerce World</h1>
-    <span>Let Piranha Technologies Help your Business<br></br> </span> 
-    <span>with our IT Solutions <br></br></span> 
-   <Link to="/contact">
-    <button className={styles.heroButton}>Learn How</button>
-    </Link>
+        <h1>Drive your Company into the</h1>
+            <h1> Ecommerce World</h1>
+                <span>Let Piranha Technologies Help your Business<br></br> </span> 
+                <span>with our IT Solutions <br></br></span> 
+                    <Link to="/contact">
+                        <button className={styles.heroButton}>Learn How</button>
+                    </Link>
     </div>
-    </Animated>
-    </Animated>
-            </div>
-
-
-
-
+        </Animated>
+        </Animated>
+    </div>
 
         <div className={styles.advertcontainer}>       
       
@@ -113,38 +102,5 @@ class Advert extends Component {
     );
   }
 }
-
-class AdPane extends Component {
-    
-    constructor(props) {
-        super(props)
-        this.state = {hover: false}
-        this.toggleHover = this.toggleHover.bind(this)
-      }
-
-    toggleHover(){
-        this.setState({hover: !this.state.hover})
-      }
-       
-
-  render() {
-    return (
-        <ScrollAnimation animateIn="bounceInRight" animateOnce={true} animatePreScroll={false}>
-            <div className={styles.adContainer} onClick={this.toggleHover} style={{backgroundImage: "url("+ this.props.service.bgUrl+ ")"}}>
-                
-                
-                <div className={styles.shader}>
-                <h2>{this.props.service.h1_txt}</h2>
-                <h6>{this.props.service.h6_txt}</h6>
-                <div className={styles.btn}><a href="#/services" >View</a></div>
-                </div>
-            </div>
-        </ScrollAnimation>
-
-    );
-  }
-}
-
-
 
 export default Advert;

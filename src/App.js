@@ -50,8 +50,6 @@ class App extends Component {
         <Route exact path="/" component={AdEvents}/>
         <Route path="/contact" component={Contacter}/>
         <Route path="/services" component={Services}/>
-       
-
         <Route path="/bio" component={Bio}/>
         </Switch>
 
