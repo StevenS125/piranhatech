@@ -19,8 +19,7 @@ class Header extends Component {
 }
 
 
-
-
+// opens dropdown navigation on mobile
 openList = () => {
   return (
     <Animated animationIn="fadeInDown" animationInDelay={0} isVisible={true}>
@@ -33,6 +32,7 @@ openList = () => {
   );
 }
 
+// closes dropdown navigation on mobile and switches nav burger back from X state
 closeList = () => {
   this.setState({
     listopen: false,
@@ -44,7 +44,7 @@ closeList = () => {
 
 
 
-
+// sets state of burger/opens closes navdropdown
 toggleList = () => {
 if (!this.state.listopen) {
   this.setState({
@@ -83,6 +83,7 @@ render() {
                          <Link className={styles.links} to="/">Home</Link>
                          <Link className={styles.links} to="/Services">Services</Link>   
                          <Link className={styles.links} to="/Contact">Contact Us</Link>
+                         <Link className={styles.links} to="/bio">About Us</Link>
                             <a className={styles.icons} href="https://facebook.com/piranhatechnologies" target="blank"><FontAwesomeIcon icon={faFacebook} size="xs" /></a>
                             <a className={styles.icons} href="https://twitter.com/thepiranhatech" target="blank"><FontAwesomeIcon icon={faTwitter} size="xs" /></a>  
                             <a className={styles.icons} href="https://linkedin.com/company/piranha-tech/" target="blank"><FontAwesomeIcon icon={faLinkedin} size="xs" /></a>  

@@ -28,7 +28,7 @@ class Contact extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    // get our form data out of state
+    // get our form data out of state to email
     const pData = this.state;
     fetch('https://ptmailer.herokuapp.com/api/', {
     method: 'post',
@@ -63,6 +63,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
+        {/* beginning of form */}
       <div className={styles.forming}>
       
       <div className={styles.head}>
